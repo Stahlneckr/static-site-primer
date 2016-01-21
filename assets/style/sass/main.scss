@@ -1,0 +1,6 @@
+@import 'base';
+@import 'vars';
+
+.container {
+  @include outer-container;
+}
