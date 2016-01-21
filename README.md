@@ -2,13 +2,11 @@ Simple static site jump-off point.
 ---------
 
 
-
-# Contents:
 ## JS
   * Jquery v1.12.0
 
 ## Sass
-  * reset v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+  * Reset v2.0 (http://meyerweb.com/eric/tools/css/reset/)
   * Bourbon
   * Neat
 
