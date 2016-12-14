@@ -8,7 +8,6 @@ Simple static site jump-off point.
 ## Sass
   * Reset v2.0 (http://meyerweb.com/eric/tools/css/reset/)
   * Bourbon
-  * Neat
 
 ## Components
   * Fonts
