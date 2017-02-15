@@ -1,0 +1,33 @@
+{
+  "name": "static-site-primer",
+  "version": "1.0.0",
+  "description": "Simple static site jump-off point. Webpack Version",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-server": "webpack-dev-server --progress --colors",
+    "build": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stahlneckr/static-site-primer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stahlneckr/static-site-primer/issues"
+  },
+  "homepage": "https://github.com/Stahlneckr/static-site-primer#readme",
+  "devDependencies": {
+    "bourbon": "^4.3.2",
+    "css-loader": "^0.26.1",
+    "jquery": "^3.1.1",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  }
+}
