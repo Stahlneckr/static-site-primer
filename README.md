@@ -1,5 +1,5 @@
 ## Simple static site jump-off point.
-Webpack + Sass
+Webpack + PostCSS + cssnext
 
 ## Getting Started
   1. Install dependencies:
