@@ -13,9 +13,9 @@ Webpack + PostCSS + cssnext
 ##### JS
   * Jquery v3.1.1
 
-##### Sass
+##### PostCSS
   * Reset v2.0 (http://meyerweb.com/eric/tools/css/reset/)
-  * Bourbon v4.3.2
+  * cssnext
 
 ##### Components
   * Fonts
