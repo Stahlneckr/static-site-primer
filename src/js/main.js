@@ -6,6 +6,9 @@ var Main = function () {
   };
 }();
 
+// for hot reload -- remove for production
+require('../../index.html');
+
 var jQuery = $ = require('jquery');
 
 // style

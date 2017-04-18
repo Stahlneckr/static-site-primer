@@ -19,6 +19,10 @@ module.exports = {
           'font-loader',
           'sass-loader'
         ]
+      },
+      {
+        test: /\.html$/,
+        loader: 'raw-loader'
       }
     ]
   }
