@@ -5,3 +5,5 @@ var Main = function () {
     }
   };
 }();
+
+Main.init();
