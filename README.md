@@ -5,11 +5,14 @@ Webpack + Sass
   1. Install dependencies:
     `npm install`
   2. Install bourbon:
+    `gem install bourbon`
     `bourbon install --path src/style/`
   3. Run dev server:
     `npm run dev-server`
   4. Build for production:
     `npm run build`
+  5. Site running:
+    `http://localhost:8080`
 
 ## Contents
 ##### JS

@@ -1,6 +1,41 @@
 @import 'reset';
 @import 'bourbon/bourbon';
-@import 'fonts';
 @import 'vars';
+
+@font-face {
+    font-family: 'sf-ui-display';
+    src: url('../assets/fonts/sf-ui-display-black.woff2') format('woff2'),
+         url('../assets/fonts/sf-ui-display-black.woff') format('woff'),
+         url('../assets/fonts/sf-ui-display-black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf-ui';
+    src: url('../assets/fonts/sf-ui-text-regular.woff2') format('woff2'),
+         url('../assets/fonts/sf-ui-text-regular.woff') format('woff'),
+         url('../assets/fonts/sf-ui-text-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf-ui';
+    src: url('../assets/fonts/sf-ui-text-bold.woff2') format('woff2'),
+         url('../assets/fonts/sf-ui-text-bold.woff') format('woff'),
+         url('../assets/fonts/sf-ui-text-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf-ui';
+    src: url('../assets/fonts/sf-ui-text-light.woff2') format('woff2'),
+         url('../assets/fonts/sf-ui-text-light.woff') format('woff'),
+         url('../assets/fonts/sf-ui-text-light.ttf') format('truetype');
+    font-weight: light;
+    font-style: normal;
+}
 
 // TODO: default styles go here
