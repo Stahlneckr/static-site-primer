@@ -1,9 +1,8 @@
 Simple static site jump-off point.
 ---------
 
-
 ## JS
-  * Jquery v1.12.0
+  * Jquery v3.1.1
 
 ## Sass
   * Reset v2.0 (http://meyerweb.com/eric/tools/css/reset/)
