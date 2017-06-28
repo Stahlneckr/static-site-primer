@@ -6,3 +6,8 @@ $white: #FFFFFF;
 $font-size: 14px;
 $sf-ui: "sf-ui", "Helvetica", "Roboto", "Arial", sans-serif;
 $sf-ui-display: "sf-ui-display", "Helvetica", "Roboto", "Arial", sans-serif;
+
+/* Breakpoints */
+$large-screen: screen and (min-width: 1200px);
+$medium-screen: screen and (min-width: 768px);
+$small-screen: screen and (min-width: 400px);
