@@ -6,9 +6,6 @@ var Main = function () {
   };
 }();
 
-// for hot reload -- remove for production
-require('../../index.html');
-
 // JS plugins
 var jQuery = $ = require('jquery');
 
