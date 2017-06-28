@@ -9,7 +9,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(ttf|woff|woff2)$/,
+        test: /\.(jpg|png|svg|ico|ttf|woff|woff2)$/,
         loader: 'url-loader'
       },
       {
@@ -39,7 +39,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'index.html'
+      template: 'index.html',
+      favicon: './src/assets/favicon.ico',
     })
   ]
 }
