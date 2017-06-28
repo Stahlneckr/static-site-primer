@@ -1,8 +1,9 @@
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './src/js/main.js',
   output: {
     path: __dirname + '/build',
-    publicPath: '/build/',
+    publicPath: '',
     filename: 'bundle.js'
   },
   module: {
@@ -35,5 +36,10 @@ module.exports = {
         loader: 'raw-loader'
       }
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'index.html'
+    })
+  ]
 }
