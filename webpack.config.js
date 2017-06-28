@@ -15,15 +15,17 @@ module.exports = {
         test: /\.css$/,
         use: [
           { loader: 'style-loader' },
-          { loader: 'css-loader?importLoaders=1' },
+          { loader: 'css-loader', options: { importLoaders: 1 } },
           { loader: 'font-loader' },
           { loader: 'postcss-loader',
             options: {
-              plugins: function () {
-                return [
-                  require('postcss-cssnext')
-                ];
-              }
+              plugins: (loader) => [
+                require('postcss-import')(),
+                require('postcss-comment/hookRequire')(),
+                require('postcss-simple-vars')(),
+                require('postcss-nested')(),
+                require('autoprefixer')({ remove: false })
+              ]
             }
           }
         ]

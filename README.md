@@ -1,5 +1,5 @@
 ## Simple static site jump-off point.
-Webpack + PostCSS + cssnext
+Webpack + PostCSS
 
 ## Getting Started
   1. Install dependencies:
@@ -15,7 +15,11 @@ Webpack + PostCSS + cssnext
 
 ##### PostCSS
   * Reset v2.0 (http://meyerweb.com/eric/tools/css/reset/)
-  * cssnext
+  * postcss-import
+  * postcss-comment
+  * postcss-simple-vars
+  * postcss-nested
+  * autoprefixer
 
 ##### Components
   * Fonts
