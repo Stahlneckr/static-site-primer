@@ -1,4 +1,8 @@
+/* Colors */
+$black: #000000;
+$white: #FFFFFF;
 
-// Typography
+/* Typography */
+$font-size: 14px;
 $sf-ui: "sf-ui", "Helvetica", "Roboto", "Arial", sans-serif;
 $sf-ui-display: "sf-ui-display", "Helvetica", "Roboto", "Arial", sans-serif;

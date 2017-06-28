@@ -1,5 +1,5 @@
 ## Simple static site jump-off point.
-Webpack + Sass
+Webpack + PostCSS
 
 ## Getting Started
   1. Install dependencies:
@@ -18,9 +18,13 @@ Webpack + Sass
 ##### JS
   * Jquery v3.1.1
 
-##### Sass
+##### PostCSS
   * Reset v2.0 (http://meyerweb.com/eric/tools/css/reset/)
-  * Bourbon v4.3.2
+  * postcss-import
+  * postcss-comment
+  * postcss-simple-vars
+  * postcss-nested
+  * autoprefixer
 
 ##### Components
   * Fonts

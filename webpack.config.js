@@ -6,18 +6,28 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
-        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        test: /\.(ttf|woff|woff2)$/,
         loader: 'url-loader'
       },
       {
-        test: /\.scss$/,
-        loaders: [
-          'style-loader',
-          'css-loader',
-          'font-loader',
-          'sass-loader'
+        test: /\.css$/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader', options: { importLoaders: 1 } },
+          { loader: 'font-loader' },
+          { loader: 'postcss-loader',
+            options: {
+              plugins: (loader) => [
+                require('postcss-import')(),
+                require('postcss-comment/hookRequire')(),
+                require('postcss-simple-vars')(),
+                require('postcss-nested')(),
+                require('autoprefixer')({ remove: false })
+              ]
+            }
+          }
         ]
       },
       {
