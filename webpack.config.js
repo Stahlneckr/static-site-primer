@@ -1,17 +1,22 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-module.exports = {
+const InterpolateHtmlPlugin = require('interpolate-html-plugin');
+
+var config = {
   entry: './src/js/main.js',
   output: {
     path: __dirname + '/build',
     publicPath: '',
     filename: 'bundle.js'
   },
+  devServer: {
+    inline: true, // autorefresh
+    historyApiFallback: {
+      index: '/'  // serve index for 404 (react-router)
+    },
+    port: 3000 // development port server
+  },
   module: {
     rules: [
-      {
-        test: /\.(jpg|png|svg|ico|ttf|woff|woff2)$/,
-        loader: 'url-loader'
-      },
       {
         test: /\.css$/,
         use: [
@@ -32,12 +37,20 @@ module.exports = {
         ]
       },
       {
-        test: /\.html$/,
-        loader: 'raw-loader'
+        test: /\.(jpg|png|svg|ico|ttf|woff|woff2)$/,
+        loader: 'url-loader',
+        options: {
+          limit: 8192
+        }
       }
     ]
   },
   plugins: [
+    // Adds %PUBLIC_URL% to html template
+    new InterpolateHtmlPlugin({
+      'PUBLIC_URL': 'public'
+    }),
+    // Generates HTML based on template
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/index.html',
@@ -50,3 +63,4 @@ module.exports = {
     })
   ]
 }
+module.exports = config;

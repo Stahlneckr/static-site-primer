@@ -5,15 +5,15 @@ Webpack + PostCSS
   1. Install dependencies:
     `npm install`
   3. Run dev server:
-    `npm run dev-server`
+    `npm run dev`
   4. Site running:
-    `http://localhost:8080`
+    `http://localhost:3000`
   5. Build for production:
     `npm run build`
 
 ## Contents
 ##### JS
-  * Jquery v3.1.1
+  * none
 
 ##### PostCSS
   * Reset v2.0 (http://meyerweb.com/eric/tools/css/reset/)
