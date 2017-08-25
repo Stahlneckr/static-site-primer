@@ -28,6 +28,7 @@
     "html-webpack-plugin": "^2.29.0",
     "interpolate-html-plugin": "^2.0.0",
     "postcss-comment": "^1.0.3",
+    "postcss-custom-media": "^6.0.0",
     "postcss-import": "^10.0.0",
     "postcss-loader": "^2.0.6",
     "postcss-nested": "^2.0.2",

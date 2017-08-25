@@ -30,6 +30,7 @@ var config = {
                 require('postcss-comment/hookRequire')(),
                 require('postcss-simple-vars')(),
                 require('postcss-nested')(),
+                require('postcss-custom-media'),
                 require('autoprefixer')({ remove: false })
               ]
             }

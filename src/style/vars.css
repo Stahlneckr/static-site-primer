@@ -8,6 +8,6 @@ $sf-ui: "sf-ui", "Helvetica", "Roboto", "Arial", sans-serif;
 $sf-ui-display: "sf-ui-display", "Helvetica", "Roboto", "Arial", sans-serif;
 
 /* Breakpoints */
-$large-screen: screen and (min-width: 1200px);
-$medium-screen: screen and (min-width: 768px);
-$small-screen: screen and (min-width: 400px);
+/* Usage: @media (--small-screen) { ... } */
+@custom-media --medium-screen (max-width: 768px);
+@custom-media --small-screen (max-width: 480px);
