@@ -1,5 +1,7 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackInlineSVGPlugin = require('html-webpack-inline-svg-plugin');
 const InterpolateHtmlPlugin = require('interpolate-html-plugin');
+const ReloadPlugin = require('reload-html-webpack-plugin');
 
 var config = {
   entry: './src/js/main.js',
@@ -30,7 +32,7 @@ var config = {
                 require('postcss-comment/hookRequire')(),
                 require('postcss-simple-vars')(),
                 require('postcss-nested')(),
-                require('postcss-custom-media'),
+                require('postcss-custom-media')(),
                 require('autoprefixer')({ remove: false })
               ]
             }
@@ -38,7 +40,7 @@ var config = {
         ]
       },
       {
-        test: /\.(jpg|png|svg|ico|ttf|woff|woff2)$/,
+        test: /\.(jpg|png|ico|ttf|woff|woff2)$/,
         loader: 'url-loader',
         options: {
           limit: 8192
@@ -61,7 +63,10 @@ var config = {
       filename: 'example.html',
       template: './src/example.html',
       favicon: './src/assets/favicon.ico',
-    })
+    }),
+    new HtmlWebpackInlineSVGPlugin(),
+    // REMOVE THIS
+    new ReloadPlugin()
   ]
 }
 module.exports = config;
