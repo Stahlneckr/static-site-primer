@@ -40,7 +40,7 @@ var config = {
         ]
       },
       {
-        test: /\.(jpg|png|ico|ttf|woff|woff2)$/,
+        test: /\.(jpg|png|mp4|webm|ico|ttf|woff|woff2)$/,
         loader: 'url-loader',
         options: {
           limit: 8192
@@ -57,11 +57,13 @@ var config = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/index.html',
+      inject: 'head',
       favicon: './src/assets/favicon.ico',
     }),
     new HtmlWebpackPlugin({
       filename: 'example.html',
       template: './src/example.html',
+      inject: 'head',
       favicon: './src/assets/favicon.ico',
     }),
     new HtmlWebpackInlineSVGPlugin(),
